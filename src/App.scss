@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+
+
+
+.App {
+
+  a{ text-decoration: none;}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+  .container {    
+
+    .blog-header {
+      line-height: 1;
+      border-bottom: 1px solid #e5e5e5;
+  }
+  
+
+  .display-4 {
+    font-size: 2.5rem;
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+}
+
+  header {
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      margin: 14px 0;
+
+      h1 {
+        margin: 0;
+        font-family: auto;
+        color: darkslategray;
+        font-size: 30px;
+      }
+
+      .header-items {
+        color: dimgray;
+        margin-top: 8px;
+        font-size: 14px;
+
+        button {
+          background: transparent;
+          border: 1px solid darkgray;
+          padding: 6px 10px;
+          font-size: 12px;
+          color: dimgray;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header-navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+
+      &-item {
+        color: dimgray;
+        margin: 1rem 0.75rem;
+      }
+    }
+  }
+
+  .poster-blog {
+    color: white;
+    background-color: #424040;
+    padding: 2.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+
+    &-heading {
+      font-style: italic;
+      font-size: 40px;
+      font-family: math;
+      width: 30%;
+    }
+
+    &-text {
+      font-family: inherit;
+      width: 35%;
+      margin: 1rem 0;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    button {
+      color: white;
+      border: none;
+      background: transparent;
+      padding: 0;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    &-card {
+      display: flex;
+      border: 1px solid gray;
+      border-radius: 4px;
+
+      &-data {
+        width: 65%;
+        padding: 1.2rem 1rem;
+      }
+
+      &-thumbnail {
+        color: white;
+        background-color: #555454;
+        text-align: center;
+        width: 35%;
+
+        div {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+  .blog-footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+
+
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+  }
+  .h-md-250 {
+    height: 250px;
+}
+  }
+}
