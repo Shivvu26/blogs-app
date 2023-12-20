@@ -36,6 +36,21 @@ const Blogs = (props) => {
                         From the Firehose
                     </h3>
 
+                    {blog && blog?.data?.map((item, index) => {
+                        return (
+                            <article key={index} className="blog-post">
+                                <h2 className="blog-post-title">{item.title}</h2>
+                                <p className="blog-post-meta">{item.date} by <a href="#">{item.author}</a></p>
+
+                                <p>{item.description}</p>
+                                <blockquote>
+                                    <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                                </blockquote>
+                            </article>
+                        )
+                    })}
+
+
                     <article className="blog-post">
                         <h2 className="blog-post-title">Sample blog post</h2>
                         <p className="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
@@ -150,20 +165,6 @@ const Blogs = (props) => {
                         </ul>
                         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
                     </article>
-
-                    {blog && blog?.data?.map((item, index) => {
-                        return (
-                            <article key={index} className="blog-post">
-                                <h2 className="blog-post-title">{item.title}</h2>
-                                <p className="blog-post-meta">{item.date} by <a href="#">{item.author}</a></p>
-
-                                <p>{item.description}</p>
-                                <blockquote>
-                                    <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-                                </blockquote>
-                            </article>
-                        )
-                    })}
 
 
                     <nav className="blog-pagination" aria-label="Pagination">
